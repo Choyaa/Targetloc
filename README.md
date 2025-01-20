@@ -1,8 +1,3 @@
----
-noteId: "569b13502e3611efb6bb53f101bd6eb9"
-tags: []
-
----
 # UAVD4L: A Large-Scale Dataset for UAV 6-DoF Localization
 
 This repository provides the implementation of the "UAVD4L: A Large-Scale Dataset for UAV 6-DoF Localization" as presented in the 3DV 2024 from the National University of Defense Technology.
@@ -11,9 +6,10 @@ This repository provides the implementation of the "UAVD4L: A Large-Scale Datase
   <a href="https://github.com/Choyaa/Targetloc"><img src="asserts/pipeline.png" width="60%"/></a>
 </p>
 <br/>
+
 ## Overview
 
-The `Targetloc` framework is designed to address the challenge of 6-DoF (six degrees of freedom) visual localization across different views, particularly from aerial to ground perspectives. Unlike traditional ground-level visual localization, this method leverages an iterative render-and-compare pipeline to enhance algorithm robustness, even when starting from noisy initial priors.
+UAVD4L is a large-scale dataset designed for 6-DoF localization of Unmanned Aerial Vehicles (UAVs) in GPS-denied environments. It includes a textured 3D reference model, query images captured from diverse flight trajectories, and accurate ground truth poses. Additionally, we propose a two-stage 6-DoF localization pipeline (`Targetloc`) that leverages synthetic data generation and online visual localization to achieve precise localization in complex scenes.
 
 ## Installation
 
