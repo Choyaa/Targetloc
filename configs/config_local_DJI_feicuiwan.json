@@ -1,0 +1,109 @@
+{
+    "flight_type": "M300",
+    "render2loc": {
+        "dev": "phone",
+        "engine": "osg",
+        "model_ckpt": "./weights/outdoor_ds.ckpt",
+        "render_images": "images/render_upright/",
+        "datasets": "datasets/翡翠湾/",
+        "sampler_name": "rand_six_axis",
+        "scaler_name": "constant",
+        "M300": {
+            "query_camera_W": [
+                4056,
+                3040,
+                2028,
+                1520,
+                6.29,
+                4.71,
+                4.5
+            ],
+            "query_camera_Z": [
+                5184,
+                3888,
+                2592,
+                1944,
+                7.41,
+                5.56
+            ],
+            "query_camera_T": [
+                640,
+                512,
+                7.68,
+                6.144
+            ]
+        },
+        "M3T": {
+            "query_camera_W": [
+                8000,
+                6000,
+                6.4,
+                4.8
+            ],
+            "query_camera_Z": [
+                4000,
+                3000,
+                2000,
+                1500,
+                6.4,
+                4.8
+            ],
+            "query_camera_T": [
+                640,
+                512,
+                7.68,
+                6.144
+            ]
+        },
+        "render_camera": [
+            800,
+            600,
+            1.143,
+            0.858,
+            4.5,
+            55.24912344,
+            1.3333
+        ],
+        "distortion": [
+            0.293656243361741,
+            -1.13028438807054,
+            0.000113131446409535,
+            5.29911015250079e-05,
+            1.24340747827876
+        ],
+        "results": "",
+        "osg": {
+            "model_path": "http://localhost:8078/Scene/Production_6.json",
+            "init_rot": [
+                0,
+                0,
+                0
+            ],
+            "init_trans": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "localize_render2loc": {
+        "loc": {
+            "estimation": {
+                "ransac": {
+                    "max_error": 12
+                }
+            }
+        }
+    },
+    "evaluate": {
+        "gt_pose": "gt_pose/gt_pose.txt"
+    },
+    "ray_casting": {
+        "num_sample": 100,
+        "DSM_path": "datasets/3D模型数据/翡翠湾/dsm/DSM_merge.tif",
+        "DSM_npy_path": "datasets/3D模型数据/翡翠湾/dsm/DSM_array.npy",
+        "geotransform_path": "datasets/3D模型数据/翡翠湾/dsm/geotransform.npy",
+        "area_minZ": 20.580223,
+        "write_path": "./predictXYZ.txt"
+    }
+}
