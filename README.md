@@ -3,7 +3,7 @@
 This repository provides the implementation of the "UAVD4L: A Large-Scale Dataset for UAV 6-DoF Localization" as presented in the 3DV 2024 from the National University of Defense Technology.
 
 <p align="center">
-  <a href="https://github.com/Choyaa/Targetloc"><img src="asserts/pipeline.png" width="60%"/></a>
+  <a href="https://github.com/Choyaa/Targetloc"><img src="asserts/pipeline.png" width="100%"/></a>
 </p>
 <br/>
 
